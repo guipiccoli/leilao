@@ -3,13 +3,13 @@ public class Vendedor {
     String nome;
     String cpf;
     int idContaBancaria;
-    Produtos[] produtos;
+    ArrayList<Produtos> produtos;
 
-    public Vendedor(String nome, String cpf, int idContaBancaria, Produtos[] produtos){
+    public Vendedor(String nome, String cpf, int idContaBancaria){
         this.nome = nome;
         this.cpf = cpf;
         this.idContaBancaria = idContaBancaria;
-        this.produtos = produtos
+        produtos = new ArrayList<>();
     }
 
     public String getNome(){
@@ -23,4 +23,8 @@ public class Vendedor {
     public int getContaBancaria() {
         return idContaBancaria;
     }
+
+    public void addProdutos(Produto produto){
+        produtos.add(produto);
+        }
 }
