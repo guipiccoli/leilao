@@ -1,4 +1,4 @@
-public class Lance() {
+public class Lance {
     
     int idLance;
     double valorLance;
@@ -28,3 +28,4 @@ public class Lance() {
         return produto;
     }
 }
+

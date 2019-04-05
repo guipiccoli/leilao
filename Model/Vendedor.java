@@ -1,15 +1,17 @@
+import java.util.ArrayList;
+
 public class Vendedor {
 
     String nome;
     String cpf;
     int idContaBancaria;
-    ArrayList<Produtos> produtos;
+    ArrayList<Produto> produtos;
 
     public Vendedor(String nome, String cpf, int idContaBancaria){
+        this.idContaBancaria = idContaBancaria;
         this.nome = nome;
         this.cpf = cpf;
-        this.idContaBancaria = idContaBancaria;
-        produtos = new ArrayList<>();
+        this.produtos = new ArrayList<>();
     }
 
     public String getNome(){
